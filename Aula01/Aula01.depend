@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1755029547 source:u:\pe\aula01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<stdbool.h>
+
+1755027482 source:u:\pe\aula01\variaveis.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<stdbool.h>
+
