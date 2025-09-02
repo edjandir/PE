@@ -6,6 +6,7 @@ using namespace std;
 void imprime_array(int[], int);
 float calcula_media(int[], int);
 void maior_menor(int[], int);
+void inverter_array(int[], int);
 
 int main()
 {
@@ -26,7 +27,17 @@ int main()
 
     //imprime_array(nums, tamanho);
     //cout << "Média do array {20,5,6,9,8,16,30,3,7,12}: " << calcula_media(nums, tamanho);
-    maior_menor(nums, tamanho);
+    //maior_menor(nums, tamanho);
+    cout << "{20,5,6,9,8,16,30,3,7,12} invertido; {";
+    inverter_array(nums);
+    for(int i=0; i < tamanho; i++) {
+        cout << nums[i];
+        if (i == tamanho-1) {
+            cout << "}";
+        } else {
+            cout << ",";
+        }
+    }
     return 0;
 }
 
@@ -60,4 +71,19 @@ void maior_menor(int nums[], int len){
     }
 
     cout << "Maior: " << maior << endl << "Menor: " << menor;
+}
+
+//exercício 4
+void inverter_array(int nums[], int n) {
+    int temp;
+    int j = n - 1;
+    int i = 0;
+
+    while (i < j) {
+        temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+        i++;
+        j--;
+    }
 }
